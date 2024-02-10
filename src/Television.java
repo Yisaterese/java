@@ -34,7 +34,7 @@ public class Television {
     public void reduceVolume(int reducedVolume){
         for(int count  = reducedVolume; count >= 1;  count-- ) {
             boolean reducedVolumeRange = reducedVolume < 16;
-            if(volumeRange) {
+            if(reducedVolumeRange){
                 volume--;
             }else{
 

@@ -34,7 +34,8 @@ public class TestTelevision {
         tv.isOff();
         assertFalse(tv.isPoweredOn());
         assertTrue(tv.toggleSwitch());
-        assertEquals(2,tv.addVolume(2));
+        tv.addVolume(2);
+        assertEquals(2,tv.getCurrentVolume());
 
     }
         @Test
@@ -46,8 +47,10 @@ public class TestTelevision {
             tv.isOff();
             assertFalse(tv.isPoweredOn());
             assertTrue(tv.toggleSwitch());
-            assertEquals(4,tv.addVolume(4));
-            assertEquals(1, tv.reduceVolume(3));
+            tv.addVolume(4);
+            assertEquals(4,tv.getCurrentVolume());
+            tv.reduceVolume(3);
+            assertEquals(1,tv.getCurrentVolume());
 
 
         }
@@ -61,8 +64,10 @@ public class TestTelevision {
         tv.isOff();
         assertFalse(tv.isPoweredOn());
         assertTrue(tv.toggleSwitch());
-        assertEquals(4,tv.addVolume(4));
-        assertEquals(1, tv.reduceVolume(3));
+        tv.addVolume(4);
+        assertEquals(4,tv.getCurrentVolume());
+        tv.reduceVolume(3);
+        assertEquals(1,tv.getCurrentVolume());
 
 
 
@@ -76,7 +81,10 @@ public class TestTelevision {
         assertTrue(tv.isPoweredOn());
         tv.isOff();
         assertTrue(tv.toggleSwitch());
-        assertEquals(2,tv.addVolume(2));
+        tv.addVolume(2);
+        assertEquals(2,tv.getCurrentVolume());
+        tv.reduceVolume(1);
+        assertEquals(1,tv.getCurrentVolume());
         tv.subScribeChannels("Wazobia","Channels","Ait");
         assertEquals(3,tv.numberOfChannelsSubscribed());
         tv.unsubscribeChannels("Ait","Wazobia");
