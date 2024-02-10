@@ -69,7 +69,23 @@ public class TestTelevision {
         tv.reduceVolume(3);
         assertEquals(1,tv.getCurrentVolume());
 
+    }
 
+    @Test
+    public void testTelevisionCanNotAddVolumeAbove16_televisionCanNotAddVolumeAbove16() {
+        Television tv = new Television();
+        assertFalse(tv.isPoweredOn());
+        tv.isOn();
+        assertTrue(tv.isPoweredOn());
+        tv.isOff();
+        assertFalse(tv.isPoweredOn());
+        assertTrue(tv.toggleSwitch());
+        tv.addVolume(4);
+        assertEquals(4,tv.getCurrentVolume());
+        tv.reduceVolume(3);
+        assertEquals(1,tv.getCurrentVolume());
+        tv.addVolume(16);
+        assertEquals(16,tv.getCurrentVolume());
 
     }
 

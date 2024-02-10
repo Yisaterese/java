@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="949bf141-c78c-4bb6-a0f0-0f17e32b864e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Television.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Television.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestTelevision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTelevision.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +43,17 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestTelevision.testTelevisionCanNotAddVolumeAbove16_televisionCanNotAddVolumeAbove16">
+    <configuration name="TestTelevision.testTelevisionCanNotAddVolumeAbove16_televisionCanNotAddVolumeAbove16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="television" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestTelevision" />
+      <option name="METHOD_NAME" value="testTelevisionCanNotAddVolumeAbove16_televisionCanNotAddVolumeAbove16" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestTelevision.testTelevisionCanNotReduceVolumeBelow1_televisionCanNotReduceVolumeBelow1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="television" />
       <option name="PACKAGE_NAME" value="" />
@@ -57,6 +66,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestTelevision.testTelevisionCanNotAddVolumeAbove16_televisionCanNotAddVolumeAbove16" />
         <item itemvalue="JUnit.TestTelevision.testTelevisionCanNotReduceVolumeBelow1_televisionCanNotReduceVolumeBelow1" />
       </list>
     </recent_temporary>
@@ -69,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707595930199</updated>
-      <workItem from="1707595931377" duration="1785000" />
+      <workItem from="1707595931377" duration="2152000" />
     </task>
     <servers />
   </component>
