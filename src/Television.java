@@ -21,11 +21,11 @@ public class Television {
 
     public void addVolume(int vol) {
         for(int counter = 1; counter <= vol; counter++){
-            boolean addedVolumeRange = vol >= 1;
-            if(addedVolumeRange) {
+            if(volume > 1) {
                 volume++;
             }else{
-
+                 volume = 1;
+                break;
             }
         }
 
@@ -33,11 +33,11 @@ public class Television {
 
     public void reduceVolume(int reducedVolume){
         for(int count  = reducedVolume; count >= 1;  count-- ) {
-            boolean reducedVolumeRange = reducedVolume < 16;
-            if(reducedVolumeRange){
+            if(volume <= 16){
                 volume--;
             }else{
-
+                volume = 16;
+                break;
             }
         }
     }
