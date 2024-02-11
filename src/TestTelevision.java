@@ -16,7 +16,6 @@ public class TestTelevision {
     }
     @Test
     public void testTelevisionIsOff_televisionIsOff() {
-
         assertFalse(tv.isPoweredOn());
         tv.isOn();
         assertTrue(tv.isPoweredOn());
