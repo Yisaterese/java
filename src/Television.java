@@ -38,7 +38,6 @@ public class Television {
     public int getCurrentVolume(){
         return volume;
     }
-
     public void subScribeChannels(String... inputChannel){
         for(int index = 0; index < inputChannel.length; index++)
             channels.add(inputChannel[index]);
