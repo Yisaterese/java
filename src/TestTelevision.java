@@ -113,6 +113,5 @@ public class TestTelevision {
         assertEquals(3,tv.numberOfChannelsSubscribed());
         tv.unsubscribeChannels("Ait","Wazobia");
         assertEquals(1,tv.numberOfChannelsSubscribed());
-
     }
 }
