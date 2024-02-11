@@ -47,7 +47,6 @@ public class TestTelevision {
         assertEquals(0,tv.getCurrentVolume());
         tv.addVolume(17);
         assertEquals(16,tv.getCurrentVolume());
-
     }
         @Test
         public void testTelevisionCanReduceVolume_televisionCanReduceVolume() {
