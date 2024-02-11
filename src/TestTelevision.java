@@ -12,7 +12,6 @@ public class TestTelevision {
     }
    @AfterEach
     public void tearDown(){
-        tv = null;
     }
 
     @Test

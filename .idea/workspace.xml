@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="949bf141-c78c-4bb6-a0f0-0f17e32b864e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Television.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Television.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestTelevision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTelevision.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707595930199</updated>
-      <workItem from="1707595931377" duration="16191000" />
+      <workItem from="1707595931377" duration="17295000" />
     </task>
     <servers />
   </component>
@@ -131,7 +129,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/TestTelevision.java</url>
-          <line>97</line>
+          <line>90</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
