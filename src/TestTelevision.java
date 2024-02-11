@@ -102,7 +102,6 @@ public class TestTelevision {
 
     @Test
     public void testTelevisionCanUnsubscribeChannel_televisionCanUnsubscribeChannel(){
-
         assertFalse(tv.isPoweredOn());
         tv.isOn();
         assertTrue(tv.isPoweredOn());
