@@ -45,7 +45,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestTelevision.testTelevisionCanNotAddVolumeAbove16_televisionCanNotAddVolumeAbove16">
+  <component name="RunManager">
     <configuration name="TestTelevision.testTelevisionCanNotAddVolumeAbove16_televisionCanNotAddVolumeAbove16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="television" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707595930199</updated>
-      <workItem from="1707595931377" duration="4568000" />
+      <workItem from="1707595931377" duration="6826000" />
     </task>
     <servers />
   </component>

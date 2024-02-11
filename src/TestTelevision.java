@@ -70,6 +70,8 @@ public class TestTelevision {
         assertEquals(1,tv.getCurrentVolume());
         tv.reduceVolume(-3);
         assertEquals(1,tv.getCurrentVolume());
+        tv.defaultVolume();
+        assertEquals(0,tv.getCurrentVolume());
 
     }
 
@@ -88,6 +90,8 @@ public class TestTelevision {
         assertEquals(1,tv.getCurrentVolume());
         tv.addVolume(16);
         assertEquals(16,tv.getCurrentVolume());
+        tv.defaultVolume();
+        assertEquals(0,tv.getCurrentVolume());
 
     }
 

@@ -18,13 +18,14 @@ public class Television {
         isOn = !isOn;
         return isOn;
     }
-
+    public void defaultVolume(){
+        this.volume = 0;
+    }
     public void addVolume(int vol) {
         for(int counter = 1; counter <= vol; counter++){
             if(volume > 1) {
                 volume++;
             }else{
-                 volume = 1;
                 break;
             }
         }
@@ -36,7 +37,6 @@ public class Television {
             if(volume <= 16){
                 volume--;
             }else{
-                volume = 16;
                 break;
             }
         }
@@ -48,15 +48,17 @@ public class Television {
 
 
     public void subScribeChannels(String... inputChannel){
-        for(int index = 0; index < inputChannel.length; index++) {
+        for(int index = 0; index < inputChannel.length; index++)
             channels.add(inputChannel[index]);
-        }
+
     }
 
     public void unsubscribeChannels(String... channelName){
-        for(int index = 0; index < channels.size()-1; index++) {
-            if(channels.get(index).equals(channelName[index])){
+        for(int index = 0; index < channelName.length; index++) {
+            if(channels.contains(channelName[index])){
                 channels.remove(channelName);
+            }else{
+
             }
         }
     }
