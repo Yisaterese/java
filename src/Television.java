@@ -5,7 +5,6 @@ public class Television {
     private int volume = 16;
     private ArrayList <String> channels = new ArrayList<>();
 
-
     public void  isOn(){
         isOn = true;
     }
