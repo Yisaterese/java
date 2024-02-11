@@ -14,6 +14,7 @@ public class TestTelevision {
     public void tearDown(){
         tv = null;
     }
+
     @Test
     public void testTelevisionIsOff_televisionIsOff() {
         assertFalse(tv.isPoweredOn());
