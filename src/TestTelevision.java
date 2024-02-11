@@ -24,7 +24,6 @@ public class TestTelevision {
         assertTrue(tv.toggleSwitch());
     }
 
-
     @Test
     public void testTelevisionIsOn_televisionIsOn() {
         Television tv = new Television();
