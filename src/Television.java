@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 public class Television {
     private boolean isOn;
     private int volume = 16;
