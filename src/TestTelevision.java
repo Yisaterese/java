@@ -1,10 +1,22 @@
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 public class TestTelevision {
+    private Television tv;
 
+    @BeforeEach
+    public void setUp() {
+        tv = new Television();
+        tv.defaultVolume();
+    }
+   @AfterEach
+    public void tearDown(){
+        tv = null;
+    }
     @Test
     public void testTelevisionIsOff_televisionIsOff() {
-        Television tv = new Television();
+
         assertFalse(tv.isPoweredOn());
         tv.isOn();
         assertTrue(tv.isPoweredOn());
@@ -27,20 +39,20 @@ public class TestTelevision {
 
     @Test
     public void testTelevisionCanAddVolume_televisionCanAddVolume() {
-        Television tv = new Television();
+
         assertFalse(tv.isPoweredOn());
         tv.isOn();
         assertTrue(tv.isPoweredOn());
         tv.isOff();
         assertFalse(tv.isPoweredOn());
         assertTrue(tv.toggleSwitch());
-        tv.addVolume(2);
-        assertEquals(2,tv.getCurrentVolume());
+        assertEquals(0,tv.getCurrentVolume());
+        tv.addVolume(17);
+        assertEquals(16,tv.getCurrentVolume());
 
     }
         @Test
         public void testTelevisionCanReduceVolume_televisionCanReduceVolume() {
-            Television tv = new Television();
             assertFalse(tv.isPoweredOn());
             tv.isOn();
             assertTrue(tv.isPoweredOn());
@@ -57,7 +69,6 @@ public class TestTelevision {
 
     @Test
     public void testTelevisionCanNotReduceVolumeBelow1_televisionCanNotReduceVolumeBelow1() {
-        Television tv = new Television();
         assertFalse(tv.isPoweredOn());
         tv.isOn();
         assertTrue(tv.isPoweredOn());
@@ -77,7 +88,7 @@ public class TestTelevision {
 
     @Test
     public void testTelevisionCanNotAddVolumeAbove16_televisionCanNotAddVolumeAbove16() {
-        Television tv = new Television();
+
         assertFalse(tv.isPoweredOn());
         tv.isOn();
         assertTrue(tv.isPoweredOn());
@@ -97,7 +108,7 @@ public class TestTelevision {
 
     @Test
     public void testTelevisionCanUnsubscribeChannel_televisionCanUnsubscribeChannel(){
-        Television tv = new Television();
+
         assertFalse(tv.isPoweredOn());
         tv.isOn();
         assertTrue(tv.isPoweredOn());

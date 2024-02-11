@@ -2,8 +2,10 @@ import java.util.ArrayList;
 
 public class Television {
     private boolean isOn;
-    private int volume;
+    private int volume = 16;
     private ArrayList <String> channels = new ArrayList<>();
+
+
     public void  isOn(){
         isOn = true;
     }
@@ -21,24 +23,22 @@ public class Television {
     public void defaultVolume(){
         this.volume = 0;
     }
-    public void addVolume(int vol) {
-        for(int counter = 1; counter <= vol; counter++){
-            if(volume > 1) {
-                volume++;
-            }else{
-                break;
+    public void addVolume(int addVol) {
+        for(int counter = 1; counter <= addVol; counter++){
+            volume++;
             }
+        if(volume  > 16) {
+            volume = 16;
         }
+            // }else{
+            //    break;
+        //}
 
     }
 
     public void reduceVolume(int reducedVolume){
         for(int count  = reducedVolume; count >= 1;  count-- ) {
-            if(volume <= 16){
-                volume--;
-            }else{
-                break;
-            }
+           volume--;
         }
     }
 
@@ -55,14 +55,12 @@ public class Television {
 
     public void unsubscribeChannels(String... channelName){
         for(int index = 0; index < channelName.length; index++) {
-            if(channels.contains(channelName[index])){
-                channels.remove(channelName);
-            }else{
-
+            if(channels.contains(channelName[index])) {
+                channels.remove(channelName[index]);
             }
         }
     }
     public int numberOfChannelsSubscribed(){
         return channels.size();
-   }
+    }
 }

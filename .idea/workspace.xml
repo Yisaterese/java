@@ -35,6 +35,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -45,7 +46,26 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestTelevision">
+    <configuration name="TestTelevision" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="television" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestTelevision" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTelevision.testTelevisionCanAddVolume_televisionCanAddVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="television" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestTelevision" />
+      <option name="METHOD_NAME" value="testTelevisionCanAddVolume_televisionCanAddVolume" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestTelevision.testTelevisionCanNotAddVolumeAbove16_televisionCanNotAddVolumeAbove16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="television" />
       <option name="PACKAGE_NAME" value="" />
@@ -56,11 +76,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTelevision.testTelevisionCanNotReduceVolumeBelow1_televisionCanNotReduceVolumeBelow1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTelevision.testTelevisionCanReduceVolume_televisionCanReduceVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="television" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestTelevision" />
-      <option name="METHOD_NAME" value="testTelevisionCanNotReduceVolumeBelow1_televisionCanNotReduceVolumeBelow1" />
+      <option name="METHOD_NAME" value="testTelevisionCanReduceVolume_televisionCanReduceVolume" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -78,9 +98,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestTelevision.testTelevisionCanNotAddVolumeAbove16_televisionCanNotAddVolumeAbove16" />
-        <item itemvalue="JUnit.TestTelevision.testTelevisionCanNotReduceVolumeBelow1_televisionCanNotReduceVolumeBelow1" />
+        <item itemvalue="JUnit.TestTelevision" />
         <item itemvalue="JUnit.TestTelevision.testTelevisionCanUnsubscribeChannel_televisionCanUnsubscribeChannel" />
+        <item itemvalue="JUnit.TestTelevision.testTelevisionCanReduceVolume_televisionCanReduceVolume" />
+        <item itemvalue="JUnit.TestTelevision.testTelevisionCanAddVolume_televisionCanAddVolume" />
+        <item itemvalue="JUnit.TestTelevision.testTelevisionCanNotAddVolumeAbove16_televisionCanNotAddVolumeAbove16" />
       </list>
     </recent_temporary>
   </component>
@@ -92,7 +114,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707595930199</updated>
-      <workItem from="1707595931377" duration="6826000" />
+      <workItem from="1707595931377" duration="16191000" />
     </task>
     <servers />
   </component>
@@ -106,6 +128,11 @@
           <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TestTelevision.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
