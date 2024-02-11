@@ -33,7 +33,6 @@ public class TestTelevision {
         tv.isOff();
         assertFalse(tv.isPoweredOn());
         assertTrue(tv.toggleSwitch());
-
     }
 
     @Test
