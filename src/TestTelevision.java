@@ -96,7 +96,6 @@ public class TestTelevision {
         assertEquals(16,tv.getCurrentVolume());
         tv.defaultVolume();
         assertEquals(0,tv.getCurrentVolume());
-
     }
 
     @Test
