@@ -38,7 +38,6 @@ public class TestTelevision {
 
     @Test
     public void testTelevisionCanAddVolume_televisionCanAddVolume() {
-
         assertFalse(tv.isPoweredOn());
         tv.isOn();
         assertTrue(tv.isPoweredOn());
