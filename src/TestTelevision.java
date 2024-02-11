@@ -83,7 +83,6 @@ public class TestTelevision {
 
     @Test
     public void testTelevisionCanNotAddVolumeAbove16_televisionCanNotAddVolumeAbove16() {
-
         assertFalse(tv.isPoweredOn());
         tv.isOn();
         assertTrue(tv.isPoweredOn());
